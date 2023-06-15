@@ -5,7 +5,7 @@ import { IconType } from "react-icons";
 interface ButtonProps {
   label: string;
   onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  disabled?: Boolean;
+  disabled?: boolean;
   outline?: boolean;
   small?: boolean;
   icon?: IconType;
@@ -21,8 +21,8 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      onClick={onClick}
       disabled={disabled}
+      onClick={onClick}
       className={`relative
   disabled:opacity-70
   disabled:cursor-not-allowed
