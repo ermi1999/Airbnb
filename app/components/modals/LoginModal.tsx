@@ -1,7 +1,7 @@
 "use client";
 import { signIn } from "next-auth/react";
 import axios from "axios";
-import { AiFillGithub } from "react-icons/ai";
+// import { AiFillGithub } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
 import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
@@ -87,12 +87,12 @@ const LoginModal = () => {
         icon={FcGoogle}
         onClick={() => signIn("google")}
       />
-      <Button
+      {/* <Button
         outline
         label="Continue with Github"
         icon={AiFillGithub}
         onClick={() => signIn("github")}
-      />
+      /> */}
       <div className="text-neutral-500 text-center mt-4 font-light">
         <div className="justify-center flex flex-row items-center gap-2">
           <div>First time using Airbnb?</div>
